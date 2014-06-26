@@ -1,0 +1,413 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:100|Roboto:100);
+
+html, body {
+        font-family: "Roboto";
+        font-weight: 100;
+        background: #ecf0f1;
+          -webkit-animation: fade 30s infinite;
+  -moz-animation: fade 30s infinite;
+  -o-animation: fade 30s infinite;
+  animation: fade 30s infinite;
+
+}
+@-webkit-keyframes fade {
+  0% {background: #ecf0f1;}
+  50% {background: #bdc3c7;}
+  100% {background: #ecf0f1;}
+}
+@-moz-keyframes fade {
+  0% {background: #ecf0f1;}
+  100% {color: #000;}
+}
+@-o-keyframes fade {
+  0% {background: #ecf0f1;}
+  100% {color: #000;}
+}
+@keyframes fade {
+  0% {background: #ecf0f1;}
+  100% {color: #000;}
+}
+#container-fluid {
+  padding: 25px;
+  box-shadow: 0px -10px 100px 10px #000;
+  background: #fff url('../img/background-noise.png') repeat;
+  -webkit-animation: fade 5s infinite;
+  -moz-animation: fade 5s infinite;
+  -o-animation: fade 5s infinite;
+  animation: fade 5s infinite;
+}
+
+
+
+.tagline {
+    font-family: "Roboto Slab";
+    font-weight: 100;
+    font-style: italic;
+}
+.quote {
+  font-family: "Roboto Slab";
+  font-weight: 100;
+  font-style: italic;
+  font-size: 150%;
+  color: #515151;
+}
+.shadowWhite {
+  text-shadow: 1px 1px #d5d5d5;
+}
+.rating {
+  font-family: "Roboto Slab";
+  font-size: 170%;
+  color: #506A16;
+}
+#errorModal {
+  text-align: center;
+  font-size: 140%;
+}
+#errorModal h1 {
+  color: #e74c3c;
+}
+#errorModal p {
+  margin: 0 20px 20px 20px;
+}
+#errorIcon {
+  color: #e74c3c;
+  font-size: 500%;
+  margin-top: 20px;
+}
+#modalCloseButton {
+  font-size: 100%;
+}
+#errorCodes {
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  background: #E74C3C;
+  padding: 10px;
+  color: #000;
+}
+
+#topbar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid #0787D2;
+    text-align: center;
+    padding-top: 10px;
+    background: #fff;
+    z-index: 99;
+}
+#resetButton {
+  text-align: center;
+  position: absolute;
+  top: -17px; left: 5px;
+  height: 20px;
+  width: 20px;
+  font-size: 100%;
+  line-height: 85px;
+  color: #0787D2;
+}
+#searchQuery {
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 100%;
+    color: #0787D2;
+    width: 75%;
+    border: none;
+    border-bottom: 3px solid #A9A9BE;
+    text-align: center;
+}
+
+@media (min-width: @screen-sm-min) {
+    #topbar {
+        position: fixed;
+        top: 0; left: 0;
+        height: 85px;
+        width: 100%;
+        border-bottom: 2px solid #0787D2;
+        text-align: center;
+        padding-top: 15px;
+        background: #fff;
+        z-index: 99;
+    }
+    #resetButton {
+      text-align: center;
+      position: absolute;
+      top: 0; left: 10px;
+      height: 50px;
+      width: 50px;
+      font-size: 200%;
+      line-height: 85px;
+      color: #0787D2;
+    }
+    #searchQuery {
+        font-family: "Roboto";
+        font-weight: 100;
+        font-size: 230%;
+        color: #0787D2;
+        width: 75%;
+        border: none;
+        border-bottom: 3px solid #A9A9BE;
+        text-align: center;
+    }
+}
+#searchButton {
+    visibility: hidden;
+}
+ul.ui-autocomplete {
+    background: transparent;
+    left: 0 !important;
+    top: 10 !important;
+    width: 100% !important;
+    border:none !important;
+    border-top: 32px solid transparent !important;
+    padding: 0 12.5% 0 12.5%;
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 200%;
+    max-height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+ul.ui-autocomplete li {
+    border-bottom: 3px solid #9F9F9F;
+    background: #fff;
+    padding: 5px 0 5px 0;
+}
+ul.ui-autocomplete li a img {
+    margin-right: 20px;
+}
+
+.panel-primary {
+  border: none;
+  box-shadow: 4px 4px 50px #696969;
+  background: #fff;
+  text-align: center;
+  line-height: 180%;
+  font-size: 140%;
+  color: #fff;
+}
+.panel-primary:hover {
+  box-shadow: 5px 5px 50px #3e3e3e;
+}
+.panel-primary .panel-heading {
+  background: none;
+  border-color: #fff;
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 140%;
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+#intro {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 120px;
+  text-align: center;
+}
+#intro h1 {
+  color: #0787D2;
+  -webkit-animation: colorchange 15s infinite;
+  -moz-animation: colorchange 15s infinite;
+  -o-animation: colorchange 15s infinite;
+  animation: colorchange 15s infinite;
+}
+@-webkit-keyframes colorchange {
+  0% {color: #0787D2;}
+  50% {color: #D95424;}
+  100% {color: #0787D2;}
+}
+@-moz-keyframes colorchange {
+  0% {color: #0787D2;}
+  50% {color: #D95424;}
+  100% {color: #0787D2;}
+}
+@-o-keyframes colorchange {
+  0% {color: #0787D2;}
+  50% {color: #D95424;}
+  100% {color: #0787D2;}
+}
+@keyframes colorchange {
+  0% {color: #0787D2;}
+  50% {color: #D95424;}
+  100% {color: #0787D2;}
+}
+#quoteArea {
+  margin-top: 50px;
+}
+
+#fullWidthPanel {
+  text-align: center;
+  color: #fff;
+  padding: 120px 0 30px 0;
+}
+#descriptionPanel {
+  /* background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%); */
+  background: #fff;
+  color: #667CAC;
+}
+#descriptionPanel .panel-heading {
+  background: #0787D2;
+}
+#trailerPanel {
+  background: #fff;
+}
+#trailerPanel .panel-heading {
+  background: #D95424;
+}
+#castPanel {
+  /* background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
+  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%); */
+  background: #fff;
+  color: #667CAC;
+}
+#castPanel .panel-heading {
+  background: #0787D2;
+  border: none;
+}
+#castPanel ul {
+  padding: 0;
+}
+#castPanel ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: none;
+}
+#rottentomatoesPanel {
+  background: #a8d5f9 url(http://www.rottentomatoes.com/images/redesign/bg-clouds.png?v=20120910) no-repeat;
+}
+#mpaaPanel {
+  text-align: center;
+  font-size: 140%;
+  background: #fff;
+  color: #D95424;
+}
+#mpaaPanel .panel-heading {
+  background: #D95424;
+}
+#metacriticPanel {
+  background: #D9E0D2;
+  color: #000;
+}
+#metacriticPanel .panel-heading {
+  background: #1E8CD8;
+}
+.metascore {
+  background: #6c3;
+  height: 85px;
+  width: 85px;
+  font-size: 42px;
+  line-height: 85px;
+  color: #fff;
+  margin: 0 auto;
+}
+.userscore {
+  background: #6c3;
+  border-radius: 55%;
+  height: 85px;
+  width: 85px;
+  font-size: 42px;
+  line-height: 85px;
+  color: #fff;
+  margin: 0 auto;
+}
+#otherPanel {
+  background: #fff;
+  color: #D95424;
+}
+#otherPanel .panel-heading {
+  background: #D95424;
+}
+
+.cast {
+    width: 90%;
+    margin: 0 auto;
+}
+.castPhoto {
+    width: 50px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.list li {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 25px
+}
+.inner {
+  display: table-row;
+  overflow: hidden;
+}
+.li-img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 30%;
+  padding-right: 1em;
+}
+.li-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.li-text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 70%;
+}
+.li-head {
+  margin: 0;
+}
+.li-sub {
+  margin: 0;
+}
+
+@media all and (min-width: 45em) {
+  .list li {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .list li {
+    width: 33.33333%;
+  }
+}
