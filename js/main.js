@@ -10,7 +10,6 @@ $(window).load(function(){
   $("#searchQuery").autocomplete({
       selectFirst: true,
       select: function(event, ui) {
-        console.log("selected")
         $("#searchQuery").submit(doSearch());
       },
       source: function( request, response ) {
@@ -21,7 +20,6 @@ $(window).load(function(){
               },
               dataType: "jsonp",
       success: function(data) {
-          console.log(data);
           response($.map(data.movies, function(movie) {
               return {
                   label: movie.title,
@@ -235,7 +233,6 @@ $(window).load(function(){
         query: searchQuery
       },
       success: function(data) {
-        console.log(data);
         var tmdb_id = data.results[0].id; 
         getRottentomatoes(searchQuery);
         getMetacritic(searchQuery);
@@ -255,7 +252,6 @@ $(window).load(function(){
         append_to_response: "credits,videos,images"
       },
       success: function(data) {
-        console.log(data);
         // For the first tile, get general information
         var tmdb_title          = data.title;
         var tmdb_originalTitle  = data.original_title;
@@ -283,7 +279,6 @@ $(window).load(function(){
         for (var i = 0; i < data.genres.length; i++) {
           tmdb_tags[i] = data.genres[i].name;
         };
-        console.log(tmdb_tags);
         var tmdb_status         = data.status;
         var tmdb_budget         = data.budget;
         var tmdb_revenue        = data.revenue;
@@ -311,7 +306,6 @@ $(window).load(function(){
       }, 
       dataType: "jsonp",
       success: function(data) {
-        console.log(data);
         var rt_critics_consensus = data.movies[0].critics_consensus;
         var rt_audience_rating   = data.movies[0].ratings.audience_rating;
         var rt_audience_score    = data.movies[0].ratings.audience_score;
@@ -335,7 +329,6 @@ $(window).load(function(){
         xhr.setRequestHeader("X-Mashape-Authorization", "mdqSAmIY5TFQ4ZrEYfAhIzHV6NvZoNj1");
       },
       success: function(data) {
-        console.log(data);
         var mc_score     = data.result.score;
         var mc_userscore = data.result.userscore;
         var mc_url       = data.result.url;
